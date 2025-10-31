@@ -9,10 +9,8 @@ class Practice
         nums.add(13);
         nums.add(60);
         nums.add(34);
-
-        for(int n: nums)
-        {
-            System.out.println(n);
-        }
+        Iterator<Integer> values = nums.iterator();
+        while(values.hasNext())
+            System.out.println(values.next());
     }
 }
